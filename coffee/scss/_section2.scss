@@ -1,0 +1,182 @@
+.container {
+  .title1 {
+    width: 1300px;
+    height: 27px;
+    font-family: "Playwrite BE VLG", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 110px;
+    color: $secondary-color;
+    font-size: 18px;
+  }
+
+  .title1::selection {
+    background: $secondary-color;
+    color: white;
+  }
+
+  .title2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+    width: 1300px;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: "PT Sans Narrow", sans-serif;
+  }
+
+  .space-title {
+    margin-top: 20px;
+    width: 130px;
+    height: 2px;
+    background-color: $secondary-color;
+    margin-left: 700px;
+  }
+}
+
+.container-full {
+  margin-top: 120px;
+  margin-left: 110px;
+  margin-right: 140px;
+
+  .container-booking {
+    display: flex;
+
+    .people-booking, .time-booking {
+      width: 220px;
+      height: 55px;
+      background-color: white;
+
+      .select-people, .select-time {
+        width: 220px;
+        height: 55px;
+        font-family: "Playwrite CZ", cursive;
+        font-size: 18px;
+        border: none;
+      }
+    }
+
+    .people-icon, .time-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 2px;
+      width: 55px;
+      height: 55px;
+      background-color: white;
+
+      i {
+        color: $secondary-color;
+        font-size: 35px;
+      }
+    }
+
+    .content1, .content2 {
+      width: 90px;
+      height: 55px;
+      font-weight: bold;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "PT Sans Narrow", sans-serif;
+    }
+
+    .date-booking {
+      width: 220px;
+      height: 55px;
+      background-color: white;
+
+      .input-date {
+        width: 220px;
+        height: 55px;
+        font-size: 18px;
+        border: none;
+      }
+    }
+
+    .date-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1px;
+      width: 55px;
+      height: 55px;
+      background-color: white;
+
+      i {
+        color: $secondary-color;
+        font-size: 35px;
+      }
+    }
+    .booking-button {
+      width: 200px;
+      background-color: $secondary-color;
+      color: white;
+      margin-left: 60px;
+      border: none;
+      font-family: "PT Sans Narrow", sans-serif;
+      font-weight: bold;
+      font-size: 20px; 
+      transition: background-color 0.5s;
+      cursor: pointer;
+      &:hover {
+       background-color: black;
+      }     
+    }
+  }
+  .container-introduce {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: column;
+    column-gap: 34px;
+    .content1, .content2, .content3 {
+        img {
+          width: 400px;
+          height: 320px;
+        }
+      }
+      .describe1, .describe2, .describe3 {
+       margin-top: 30px;
+       h3 {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: "PT Sans Narrow", sans-serif;
+        span {
+          margin-right: 16px;
+          color: $secondary-color;
+          font-size: 30px;
+          font-family: "Edu AU VIC WA NT Hand", cursive;
+          font-weight: bold;
+        }
+       }
+       p {
+        margin-top: 20px;
+        line-height: 22px;
+        color: rgb(96, 95, 95);
+       }
+      }
+      h5 {
+        margin-top: 20px;
+        color: $secondary-color;
+        font-weight: bold;
+        span {
+          margin-left: 3px;
+         i {
+          cursor: pointer;
+          transition: transform 0.8s;
+         }
+        }
+        span:hover {
+          i {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+}

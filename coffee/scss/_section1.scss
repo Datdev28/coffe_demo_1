@@ -1,0 +1,102 @@
+.container-introduce {
+  width: 100%;
+  height: 580px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // transform: translateY(-100%);
+  .img-introduce {
+
+    img {
+      width: 140px;
+      height: 140px;
+      margin-top: 10px;
+    }
+    .list-cart-introduce {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 200px;
+      right: 0;
+      z-index: 1;
+      button {
+        height: 42px;
+        width: 115px;
+        font-family: arial;
+        padding-top: 3px;
+        padding-right: 5px;
+        font-size: 9.5px;
+        font-weight: 300;
+        i {
+          padding-right: 16px;
+          font-size: 16px;
+        }
+      }
+      .btn-book {
+        background-color: #e9295f;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .btn-cart {
+        i {
+          color: #e9295f;
+        }
+      }
+    }
+  }
+  .word-introduce {
+    padding-top: 18px;
+    h1{
+      font-size: 60px;
+      font-family:  "Fjalla One", sans-serif;
+      color: white;
+      user-select: none;
+    }
+    p {
+      margin: 10px;
+      width: 440px;
+      font-family: 'Barlow Semi Condensed';
+      font-weight: 450;
+      padding-left: 115px;
+      color: white;
+      user-select: none;
+      span {
+        padding: 50px;
+      }
+    }
+    .btn-introduce {
+      width: 173px;
+      height: 53px;
+      background: transparent;
+      color: white;
+      font-weight: bold;
+      font-family:  arial;
+      font-size: 16px;
+      border: solid 2.2px white;
+      margin: 20px 0 0 183px;
+      transition: background-color 1.5s;
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+  .change-background {
+    margin-top: 80px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    .dot {
+      width: 12px;
+      height: 12px;
+      border: solid rgb(255, 254, 254);
+      border-radius: 20px;
+      background-color: white;
+      cursor: pointer;
+    }
+    .is-active {
+      scale: 1.5;
+    }
+  }
+}

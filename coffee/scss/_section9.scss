@@ -1,0 +1,225 @@
+.container-section-9 {
+  padding-top: 75px;
+  margin-left: 110px;
+  margin-right: 280px;
+  width: 1300px;
+  height: 330px;
+  display: flex;
+
+  .open-hours {
+    width: 222px;
+    height: 380px;
+    color: white;
+
+    .title {
+      margin-bottom: 50px;
+
+      h4 {
+        &::selection {
+          background-color: $secondary-color;
+          color: white;
+        }
+      }
+    }
+
+    .time-item {
+      margin-top: 30px;
+      display: flex;
+      font-family: $font-title2;
+
+      .day {
+        &::selection {
+          color: white;
+          background: $secondary-color;
+        }
+
+        font-weight: bold;
+      }
+
+      .dash {
+        margin-left: 3px;
+        margin-right: 3px;
+        margin-top: 14px;
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgb(58, 58, 58);
+      }
+
+      .time {
+        &::selection {
+          color: white;
+          background: $secondary-color;
+        }
+
+        color: rgb(193, 192, 192);
+      }
+    }
+  }
+
+  .social-network {
+    color: white;
+    margin-left: 150px;
+    width: 330px;
+    height: 330px;
+
+    .title {
+      margin-bottom: 40px;
+      font-weight: bold;
+
+      h4 {
+        &::selection {
+          background-color: $secondary-color;
+          color: white;
+        }
+      }
+    }
+
+    .post-item {
+      margin-top: 20px;
+      display: block;
+
+      a {
+        font-size: 16px;
+        font-family: $font-title2;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          color: $secondary-color;
+        }
+
+        &::selection {
+          background-color: $secondary-color;
+          color: white;
+        }
+
+        span {
+          margin-right: 0.1rem;
+
+          &::selection {
+            background-color: $secondary-color;
+            color: white;
+          }
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        font-style: italic;
+        color: $secondary-color;
+        font-family: $font-title2;
+        font-size: 14px;
+
+        &::selection {
+          background: $secondary-color;
+          color: white;
+        }
+      }
+
+      .dash {
+        margin-top: 10px;
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgb(58, 58, 58);
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .contact-me {
+    margin-left: 30px;
+    width: 240px;
+    height: 380px;
+    color: white;
+
+    .title {
+      margin-bottom: 50px;
+
+      h4 {
+        &::selection {
+          background-color: $secondary-color;
+          color: white;
+        }
+      }
+    }
+    .contact-item {
+      margin-top: -11px;
+      p {
+        color: #acacac;
+        margin-top: 14px;
+      }
+      .contact-email {
+        color: $secondary-color;
+        font-size: 14px;
+      }
+      h4 {
+        font-family: $font-title2;
+        font-weight: bold;
+        margin-top: 36px;
+        font-size: 20px;
+      }
+      .your-email {
+        margin-top: 26px;
+        display: flex;
+        input {
+          padding-left: 5px;
+          width: 200px;
+          height: 40px;
+          background: transparent;
+          border: solid 1px #acacac;
+
+          &:focus {
+            padding-left: 5px;
+            color:white;
+          }
+        }
+        button {
+          margin-left: 5px;
+          width: 40px;
+          height: 40px;
+          background-color: $secondary-color;
+          border: none;
+          cursor: pointer;
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .localtion-shop {
+    margin-left: 70px;
+    color: white;
+    width: 170px;
+    .title {
+      margin-bottom: 40px;
+      font-weight: bold;
+
+      h4 {
+        &::selection {
+          background-color: $secondary-color;
+          color: white;
+        }
+      }
+    }
+    .shop-name {
+      margin-top: -5px;
+      font-family: $font-title2;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+    .address {
+      color: #acacac;
+      line-height: 1.5rem;
+    }
+    .dash {
+      width: 250px;;
+      height: 1px;
+      background-color: #373737;
+      margin-top: 20px;
+      margin-bottom: 25px;
+    }
+
+  }
+}

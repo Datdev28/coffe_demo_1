@@ -1,0 +1,138 @@
+@import './config.scss';
+@import './menu.scss';
+@import './section1';
+@import './section2';
+@import './section3';
+@import './section4';
+@import './section5';
+@import './section6';
+@import './section7';
+@import './section8';
+@import './section9';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+.section-1 {
+  background-image: url('../img/background3.avif');
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top -90px;
+  transition: background-image 0.5s ease-in-out;
+ 
+}
+.svg {
+  margin-top: -45px;
+}
+.section-2 {
+  background-color: #eae7de;
+  height: 130vh;
+  position: relative;
+  margin-top: -20px;
+}
+.svg-1 {
+  margin-top: -50px;
+}
+.section-3 {
+  background-image: url('../img/background-section3-img3.avif');
+  height: 100vh;
+  background-size: cover;
+  margin-top: -80px;
+  background-attachment: fixed;
+  background-position: center -280px;
+  overflow-y: auto;
+
+}
+.svg-2 {
+  margin-top: -50px;
+}
+.section-4 {
+  background-color: #eae7de;
+  height: 130vh;
+  position: relative;
+  margin-top: -20px;
+}
+.svg-3 {
+  margin-top: -20px;
+}
+.section-5{
+  background: linear-gradient(to right,
+  rgba(rgb(0, 0, 0), 0.8),
+  rgba(rgb(9, 9, 9), 0.8)),
+  url('../img/background-section5-img1.avif');
+  height: 170vh;
+  background-size: cover;
+  background-position: center;
+  margin-top: -90px;
+  background-repeat: no-repeat;
+}
+.svg-4 {
+  margin-top: -50px;
+}
+.section-6 {
+  margin-top: -4px;
+  background-color: #eae7de;
+  height: 110vh;
+}
+.section-7 {
+  height: 110vh;
+  background-color: #eae7de;
+}
+.section-8 {
+  height: 120vh;
+  background-color: #eae7de;
+}
+.section-9 {
+  height: 80vh;
+  background: linear-gradient(to right,
+  rgba(black, 0.8),
+  rgba(black, 0.8)),
+  url(../img/background-section9.avif);
+  background-position: center -250px;
+  background-size: cover;
+}
+footer {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    .copy-right {
+      width: 400px;
+      color: #acacac;
+    }
+  }
+  .container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    i {
+      cursor: pointer;
+      font-size: 22px;
+      color: white;
+      transition: color 0.3s ease;
+      &:hover {
+        color: $secondary-color ;
+      }
+    }
+  }
+  .inotification {
+    width: 400px;
+    color: #acacac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+  }
+}

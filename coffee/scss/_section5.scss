@@ -1,0 +1,104 @@
+.container-section-5 {
+  .tittle-section-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      margin-top: 200px;
+      color: $secondary-color;
+      font-family: "Playwrite CZ", cursive;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: white;
+      font-family: $font-title2;
+      font-size: 40px;
+    }
+
+    .dash {
+      margin-top: 40px;
+      width: 140px;
+      height: 1.4px;
+      background-color: $secondary-color;
+    }
+  }
+
+  .drinks-menu {
+    margin-top: 100px;
+    width: 1280px;
+    height: 630px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    margin-left: 170px;
+
+    .drinks-describe {
+      display: flex;
+      height: 87px;
+      width: 570px;
+
+      .drinks-img {
+        img {
+          width: 85px;
+          height: 85px;
+        }
+      }
+
+      .describe {
+        margin-left: 25px;
+        display: flex;
+
+        .drinks-name {
+          color: white;
+          font-family: $font-title2;
+          font-size: 26px;
+          font-weight: bold;
+        }
+
+        .dash {
+          margin-left: 4px;
+          margin-top: 25px;
+          width: 240px;
+          height: 1px;
+          background-color: rgb(86, 85, 85);
+        }
+
+        .price {
+          margin-left: 4px;
+          color: white;
+          font-family: $font-title2;
+          font-weight: bold;
+          font-size: 26px;
+        }
+      }
+      .infomation {
+        p {
+          margin-top: 5px;
+          color: $secondary-color;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+  .view-menu-btn {
+    margin-top: 50px;
+    margin-left: 680px;
+    width: 180px;
+    height: 60px;
+    background-color: $secondary-color;
+    font-family: $font-title2;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: background-color 1.2s;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+    }
+  }
+}

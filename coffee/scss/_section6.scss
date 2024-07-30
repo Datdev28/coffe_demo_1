@@ -1,0 +1,107 @@
+.container-section-6 {
+  .tittle-section-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    span {
+      margin-top: 70px;
+      color: $secondary-color;
+      font-family: "Playwrite CZ", cursive;
+    }
+  
+    h2 {
+      margin-top: 30px;
+      color: rgb(0, 0, 0);
+      font-family: $font-title2;
+      font-size: 40px;
+    }
+  
+    .dash {
+      margin-top: 40px;
+      width: 140px;
+      height: 1.4px;
+      background-color: $secondary-color;
+    }
+  }
+  .item-coffee {
+    margin-top: 100px;
+    margin-left: 100px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    .product {
+      position: relative;
+      &:hover {
+        .add-btn {
+          visibility: visible;
+          height: 52px;
+        }
+      }
+      img {
+       width: 300px;
+       height: 300px;
+       border-bottom: 1px solid $secondary-color;
+       cursor: pointer;
+      }
+      .add-btn {
+        position: absolute;
+        visibility: hidden;
+        width: 300px;
+        height: 0px;
+        background-color: $secondary-color;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        bottom: 88px;
+        z-index: 1;
+        transition: height 0.7s;
+        cursor: pointer;
+        i {
+          margin-right: 7px;
+        }
+      }
+      .sale {
+        top: 10px;
+        left: 10px;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 30px;
+        font-family: $font-title2;
+        font-weight: bold;
+        background-color: $secondary-color;
+        color: white;
+        letter-spacing: 0.2rem;
+        font-size: 12px;
+      }
+      p {
+        font-weight: bold;
+        color: black;
+        font-family: $font-title2;
+        font-size: 22px;
+        margin-top: 10px;
+        &:hover {
+          color: $secondary-color;
+        }
+        span {
+          color: rgb(194, 194, 194);
+          text-decoration: line-through;
+          margin-right: 8px;
+        }
+      }
+      .rate {
+        cursor: pointer;
+        margin-top: 5px;
+        .fa-solid {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

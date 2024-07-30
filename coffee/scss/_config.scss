@@ -1,0 +1,15 @@
+$primary-color: black;
+$secondary-color: #c7a17a;
+$white-color: white;
+$font-title2: "PT Sans Narrow", sans-serif;
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+@function set-text-color($color){
+  @if(lightness($color) > 40%){
+    @return black;
+  } @else {
+    @return white;
+  }
+}

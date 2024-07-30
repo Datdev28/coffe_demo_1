@@ -1,0 +1,64 @@
+.container-section-3 {
+  display: flex;
+  justify-content: center;
+  .logo {
+    margin-left: 20px;
+    margin-top: 200px;
+    height: 200px;
+    width: 200px;
+    img {
+      height: 300px;
+      width: 300px;
+      border-radius: 200px;
+      background: transparent;
+    }
+  }
+  .content {
+    margin-top: 200px;
+    margin-left: 400px;
+    height: 400px;
+    width: 500px;
+    color: white;
+    p {
+      font-weight: bold;
+      font-family: arial;
+      margin-bottom: 20px;
+    }
+    .span1 {
+      font-family: "Playwrite BE VLG", cursive;
+    }
+    .dash {
+      width: 150px;
+      height: 3px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 26px;
+      margin-bottom: 26px;
+    }
+    .span2 {
+      font-family: arial;
+      font-weight: bold;
+      color: rgb(233, 226, 255);
+      font-size: 20px;
+    }
+    .read-button {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 180px;
+      height: 50px;
+      background-color: $secondary-color;
+      color: white;
+      font-size: 14px;
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      font-family: arial;
+      transition: background-color 0.5s, color 0.5s;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        color: black;
+      }
+    }
+  }
+}
