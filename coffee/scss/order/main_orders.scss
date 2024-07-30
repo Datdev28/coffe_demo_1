@@ -1,78 +1,141 @@
-.container-introduce {
+@import './config_orders';
+body {
+  background-color: #eae7de;
+}
+.nav {
   width: 100%;
-  height: 580px;
+  margin: 0;
+  color: rgb(0, 0, 0);
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  img {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 100px;
+    height: 100px;
+    border: solid black;
+    border-radius: 150px;
+  }
 
-  // transform: translateY(-100%);
-  .img-introduce {
+  &-menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    img {
-      width: 140px;
-      height: 140px;
-      margin-top: 10px;
+    .nav-menu {
+      cursor: pointer;
+      display: flex;
+      list-style: none;
+      font-weight: 550;
+
+      li {
+        padding-right: 50px;
+        position: relative;
+        &:hover .nav-menu-item {
+          visibility: visible;
+          opacity: 1;
+          height: 120px;
+        }
+        &:hover .nav-menu-item li {
+          opacity: 1;
+        }
+      }
+
+      &-item {
+        height: 0px;
+        z-index: 1;
+        padding-left: 20px;
+        background-color: white;
+        position: absolute;
+        list-style-type: none;
+        top: 40px;
+        left:-10px;
+        white-space: nowrap;
+        opacity: 0;
+        transition: opacity 0.7s, visibility 0s 0.2s, height 1.2s;
+        a {
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        li {
+          padding-bottom: 22px;
+          padding-right: 20px;
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        &:first-child {
+          padding-top: 10px;
+        }
+        a:hover {
+          color: $secondary-color;
+        }
+      }
     }
 
-    .list-cart-introduce {
-      display: flex;
-      flex-direction: column;
-      position: fixed;
-      top: 200px;
-      right: 0;
-      z-index: 1;
+    .nav-icon {
+      margin-right: 30px;
+      cursor: pointer;
 
-      button {
-        height: 42px;
-        width: 115px;
-        font-family: arial;
-        padding-top: 3px;
-        padding-right: 5px;
-        font-size: 9.5px;
-        font-weight: 300;
-
-        i {
-          padding-right: 16px;
+      i {
+        padding-left: 30px;
+        &:nth-child(2):hover {
+          opacity: 0.6;
+          transition: opacity 0.5s;
+        }
+        &:nth-child(3):hover {
+          opacity: 0.6;
+          transition: opacity 0.5s;
+        }
+      }
+      .fa-cart-shopping {
+        position: relative;
+      }
+      .count-item-cart:hover .show-cart{
+        visibility: visible;
+        height: 80px;
+      }
+      .count-item-cart {
+        width: 15px;
+        height: 15px;
+        background-color: $secondary-color;
+        position: absolute;
+        right: 122px;
+        top: 45px;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2px;
+        font-weight: 550;
+        .show-cart {
+          visibility: hidden;
+          color: rgb(0, 0, 0);
+          width: 300px;
+          height: 0px;
+          background-color: white;
+          position: absolute;
+          top: 50px;
+          right: -18px;
+          border-top: solid 2px $secondary-color;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: height 1s;
           font-size: 16px;
         }
       }
 
-      .btn-book {
-        background-color: #e9295f;
-        color: white;
-        margin-bottom: 10px;
-      }
-
-      .btn-cart {
-        i {
-          color: #e9295f;
-        }
-      }
-    }
-  }
-
-  .word-introduce {
-    padding-top: 18px;
-
-    h1 {
-      font-size: 60px;
-      font-family: "Fjalla One", sans-serif;
-      color: white;
-      user-select: none;
     }
 
-    p {
-      margin: 10px;
-      width: 440px;
-      font-family: 'Barlow Semi Condensed';
-      font-weight: 450;
-      padding-left: 115px;
-      color: white;
-      user-select: none;
-
-      span {
-        padding: 50px;
-      }
-    }
   }
 }
+
+@for $i from 1 through 3 {
+  .nav-menu-item li:nth-child(#{$i}) {
+    transition-delay: ($i * 0.1s) + 0.15s;
+  }
+}
+
+

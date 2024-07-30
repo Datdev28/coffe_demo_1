@@ -71,6 +71,7 @@
   cursor: pointer;
 }
 .nav-menu-icon .nav-icon i {
+  color: white;
   padding-left: 30px;
 }
 .nav-menu-icon .nav-icon i:nth-child(2):hover {
