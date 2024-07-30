@@ -195,6 +195,7 @@
   padding: 50px;
 }
 .container-introduce .word-introduce .btn-introduce {
+  cursor: pointer;
   width: 173px;
   height: 53px;
   background: transparent;
