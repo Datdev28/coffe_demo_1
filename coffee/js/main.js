@@ -18,3 +18,6 @@
       check_is.classList.remove('is-active');
     }
   }
+  const product = [{
+    
+  }]

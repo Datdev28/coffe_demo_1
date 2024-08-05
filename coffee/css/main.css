@@ -92,10 +92,10 @@
 .nav-menu-icon .nav-icon .count-item-cart {
   width: 15px;
   height: 15px;
+  top: -10px;
+  right: -5px;
   background-color: #c7a17a;
   position: absolute;
-  right: 122px;
-  top: 45px;
   color: white;
   font-size: 10px;
   display: flex;
@@ -103,6 +103,7 @@
   justify-content: center;
   padding-top: 2px;
   font-weight: 550;
+  font-family: arial;
 }
 .nav-menu-icon .nav-icon .count-item-cart .show-cart {
   visibility: hidden;
@@ -655,6 +656,9 @@
 }
 .container-section-6 .item-coffee .product {
   position: relative;
+}
+.container-section-6 .item-coffee .product:nth-child(4) {
+  margin-right: 100px;
 }
 .container-section-6 .item-coffee .product:hover .add-btn {
   visibility: visible;
