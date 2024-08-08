@@ -24,13 +24,15 @@
     <header>
       <nav class="nav">
         <div class="nav-logo">
+          <a href="main.html">
           <img src="img/logo_coffee.png" alt="Logo">
+          </a>
         </div>
         <div class="nav-menu-icon">
           <ul class="nav-menu">
             <li>HOME
               <ul class="nav-menu-item">
-                <li><a href="index.html">Main Home</a></li>
+                <li><a href="main.html">Main Home</a></li>
                 <li><a href="">Metro Home</a></li>
                 <li><a href="">Dark Home</a></li>
               </ul>
@@ -57,13 +59,7 @@
           </ul>
           <div class="nav-icon">
             &#124;
-            <i class="fa-solid fa-cart-shopping">
-              <div class="count-item-cart">0
-                <div class="show-cart">
-                  No products in the cart
-                </div>
-              </div>
-            </i>
+            <i class="fa-solid fa-cart-shopping"></i>
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-bars"></i>
  
@@ -74,81 +70,7 @@
     <main>
       <h2>Review your order</h2>
       <div class="container-cart">
-        <div class="container-order-infomation">
-          <div class="order-infomation">
-            <div class="delivery-date">Delivery date: Webnesday. August 7</div>
-            <div class="product-infomation">
-              <div class="product-img">
-                <img src="img/drink_menu/product-image-1-633x633.jpg" alt="">
-              </div>
-              <div class="product-details">
-                <div class="product-name">PAPER POUCH</div>
-                <div class="product-price">$46.00</div>
-                <div class="product-quantity">Quantity: 1</div>
-              </div>
-              <div class="delivery-options">
-                <div class="delivery-option-title">Choose a delivery option:</div>
-                <div class="delivery-option">
-                  <input type="radio" checked class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Wednesday, August 7</div>
-                    <div class="delivery-option-price">Free-shipping</div>
-                  </div>
-                </div>
-                <div class="delivery-option">
-                  <input type="radio" class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Saturday, August 7</div>
-                    <div class="delivery-option-price">$4.99 - Shipping</div>
-                  </div>
-                </div>
-                <div class="delivery-option">
-                  <input type="radio" class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Thursday, August 12</div>
-                    <div class="delivery-option-price">$9.99 - Shipping</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="order-infomation">
-            <div class="delivery-date">Delivery date: Webnesday. August 7</div>
-            <div class="product-infomation">
-              <div class="product-img">
-                <img src="img/drink_menu/product-image-1-633x633.jpg" alt="">
-              </div>
-              <div class="product-details">
-                <div class="product-name">PAPER POUCH</div>
-                <div class="product-price">$46.00</div>
-                <div class="product-quantity">Quantity: 1</div>
-              </div>
-              <div class="delivery-options">
-                <div class="delivery-option-title">Choose a delivery option:</div>
-                <div class="delivery-option">
-                  <input type="radio" checked class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Wednesday, August 7</div>
-                    <div class="delivery-option-price">Free-shipping</div>
-                  </div>
-                </div>
-                <div class="delivery-option">
-                  <input type="radio" class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Saturday, August 7</div>
-                    <div class="delivery-option-price">$4.99 - Shipping</div>
-                  </div>
-                </div>
-                <div class="delivery-option">
-                  <input type="radio" class="delivery-option-input">
-                  <div>
-                    <div class="delivery-option-date">Thursday, August 12</div>
-                    <div class="delivery-option-price">$9.99 - Shipping</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="container-order-infomation js-container-order-infomation">
         </div>
         <div class="payment-summary">
           <div class="payment-summary-title">Order Summary</div>
@@ -180,5 +102,7 @@
     </main>
   </section>
   <script src="https://kit.fontawesome.com/6c1ead4ba4.js" crossorigin="anonymous"></script>
+  <script src="js/order.js" type="module"></script>
+  <script src="js/payment.js" type="module"></script>
 </body>
 </html>

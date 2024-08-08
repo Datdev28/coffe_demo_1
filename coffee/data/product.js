@@ -1,4 +1,4 @@
-let products = [
+export let products = [
   { id: '1',
     name: 'PAPER POUCH',
     img: 'http://127.0.0.1:5500/coffee/img/drink_menu/product-image-1-633x633.jpg',
@@ -20,3 +20,12 @@ let products = [
     price: 4600  
   }
 ];
+export function getProduct(productId) {
+ let matchingProduct;
+  products.forEach((product) => {
+    if(product.id === productId){
+      matchingProduct = product;
+    }
+  });
+  return matchingProduct;
+}

@@ -15,6 +15,7 @@ h2 {
   font-family: arial;
   .container-order-infomation {
     margin-bottom: 100px;
+    
     .order-infomation {
       height: 270px;
       margin-bottom: 10px;
@@ -22,7 +23,7 @@ h2 {
       padding-left: 18px;
       border: solid 1px rgb(195, 191, 191);
       border-radius: 5px;
-  
+
       .delivery-date {
         color: rgb(3, 103, 3);
         font-size: 18px;
@@ -33,7 +34,6 @@ h2 {
       .product-infomation {
         margin-top: 15px;
         display: flex;
-  
         img {
           width: 130px;
           height: 135px;
@@ -41,7 +41,7 @@ h2 {
   
         .product-details {
           margin-left: 15px;
-  
+          width: 200px;
           .product-name {
             margin-bottom: 8px;
             font-weight: bold;
@@ -53,6 +53,24 @@ h2 {
             color: rgb(150, 7, 7);
             font-weight: bold;
             margin-bottom: 8px;
+          }
+          .edit-quantity {
+            cursor: pointer;
+            margin-top: 10px;
+            .update-quantity {
+              color: rgb(85, 85, 255);
+            }
+            .js-update-quantity {
+              input {
+                width: 40px;
+              }
+              .save-input {
+                color: rgb(85, 85, 255);
+              }
+            }
+             .delete-product {
+              color: red;
+             }
           }
         }
   

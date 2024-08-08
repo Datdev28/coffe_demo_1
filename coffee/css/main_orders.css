@@ -48,7 +48,7 @@
   left: -10px;
   white-space: nowrap;
   opacity: 0;
-  transition: opacity 0.7s, visibility 0s 0.2s, height 1.2s;
+  transition: opacity 0.7s, visibility 0s 0.2s, height 0.6s;
 }
 .nav-menu-icon .nav-menu-item a {
   text-decoration: none;
@@ -103,22 +103,6 @@
   justify-content: center;
   padding-top: 2px;
   font-weight: 550;
-}
-.nav-menu-icon .nav-icon .count-item-cart .show-cart {
-  visibility: hidden;
-  color: rgb(41, 138, 149);
-  width: 300px;
-  height: 0px;
-  background-color: rgb(0, 0, 0);
-  position: absolute;
-  top: 50px;
-  right: -18px;
-  border-top: solid 2px #c7a17a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: height 1s;
-  font-size: 16px;
 }
 
 .nav-menu-item li:nth-child(1) {
@@ -176,6 +160,7 @@ h2 {
 }
 .container-cart .container-order-infomation .order-infomation .product-infomation .product-details {
   margin-left: 15px;
+  width: 200px;
 }
 .container-cart .container-order-infomation .order-infomation .product-infomation .product-details .product-name {
   margin-bottom: 8px;
@@ -187,6 +172,22 @@ h2 {
   color: rgb(150, 7, 7);
   font-weight: bold;
   margin-bottom: 8px;
+}
+.container-cart .container-order-infomation .order-infomation .product-infomation .product-details .edit-quantity {
+  cursor: pointer;
+  margin-top: 10px;
+}
+.container-cart .container-order-infomation .order-infomation .product-infomation .product-details .edit-quantity .update-quantity {
+  color: rgb(85, 85, 255);
+}
+.container-cart .container-order-infomation .order-infomation .product-infomation .product-details .edit-quantity .js-update-quantity input {
+  width: 40px;
+}
+.container-cart .container-order-infomation .order-infomation .product-infomation .product-details .edit-quantity .js-update-quantity .save-input {
+  color: rgb(85, 85, 255);
+}
+.container-cart .container-order-infomation .order-infomation .product-infomation .product-details .edit-quantity .delete-product {
+  color: red;
 }
 .container-cart .container-order-infomation .order-infomation .product-infomation .delivery-options {
   margin-left: 150px;
