@@ -1,5 +1,5 @@
 export let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
+export let cartBooking = JSON.parse(localStorage.getItem('cartBooking')) || [];
 export function addToCart(productId) {
   let matchingItem;
   cart.forEach((item) => {
@@ -20,6 +20,9 @@ export function addToCart(productId) {
 }
 export function saveToCart() {
   localStorage.setItem('cart', JSON.stringify(cart));
+}
+export function saveToCartBooking() {
+  localStorage.setItem('cartBooking', JSON.stringify(cartBooking));
 }
 export function removeFromToCart(productId) {
   const newCart = []; 

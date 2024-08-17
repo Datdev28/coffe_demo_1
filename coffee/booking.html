@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css//main_booking.css">
+  <title>Booking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Fjalla+One&family=PT+Sans+Narrow:wght@400;700&family=Playwrite+AR:wght@100..400&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+CZ:wght@100..400&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <h1>Confirm Your Booking</h1>
+      <div class="container-booking">
+        <div class="people-quantity">
+          <div class="title">Numbers Of Guest 
+          <i class="fa-solid fa-person"></i>
+          </div>
+          <select class="select-people">
+            <option value="1">1 People</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8 People</option>
+          </select>
+        </div>
+        <div class="location">
+          <div class="title">Location
+            <i class="fa-solid fa-location-arrow"></i>
+          </div>
+          <select class="select-location">
+            <option value="1">100 Nguyen Thai Hoc</option>
+            <option value="2">200 Nguyen Thai Hoc</option>
+          </select>
+        </div>
+        <div class="date">
+          <div class="title">Date
+            <i class="fa-solid fa-calendar"></i>
+          </div>
+          <div class="box-date js-box-date">
+           Bạn chưa điền thông tin này!
+          </div>
+        </div>
+        <div class="time">
+          <div class="title">Time
+            <i class="fa-regular fa-clock"></i>
+          </div>
+          <select class="select-time">
+            <option selected value="1">9:00 am</option>
+            <option value="2">9:30 am</option>
+            <option value="3">10:00 am</option>
+            <option value="4">10:30 am</option>
+            <option value="5">11:00 am</option>
+            <option value="6">11:30 am</option>
+            <option value="7">12:00 am</option>
+            <option value="8">12:30 pm</option>
+            <option value="9">1:00 pm</option>
+            <option value="10">1:30 pm</option>
+            <option value="10">2:00 pm</option>
+          </select>
+        </div>
+      </div>
+      <div class="infomation">
+        <span>Your Phone Number</span>
+        <input type="number" class="number-phone-input" min="0">
+        <div class="error-number">Phone number exceeds 10 digits</div>
+        <div class="error-characters">Phone number without accent characters</div>
+      </div>
+        <button class="confirm-btn js-confirm-btn">Confirm</button>
+    </div>
+
+  </section>
+</body>
+<script src="https://kit.fontawesome.com/6c1ead4ba4.js" crossorigin="anonymous"></script>
+<script src="js/booking.js" type="module"></script>
+</html>

@@ -1,6 +1,7 @@
 import { cart, saveToCart, removeFromToCart, updateDeliveryOption } from "../data/cart.js";
 import { getProduct } from "../data/product.js";
 import { deliveryOptions, getDeliveryOption } from "../data/delivery.js";
+import { renderPaymentSummary } from "./payment.js";
 import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 
 function renderOrder() {
@@ -42,7 +43,7 @@ function renderOrder() {
     document.querySelector('.js-container-order-infomation').innerHTML = HTML;
   }
   loadCart();
-  function deliveryOptionsHTML(matchingProduct, item) {
+   function deliveryOptionsHTML(matchingProduct, item) {
     let HTML = ``
 
     deliveryOptions.forEach((option) => {
@@ -51,7 +52,7 @@ function renderOrder() {
       const deliveryDay = today.add(option.deliveryDays, 'days');
       var dateString = deliveryDay.format('dddd, MMMM D');
       const priceString = option.priceCents === 0
-        ? 'Free shiping' : `$${option.priceCents} - Shipping`
+        ? 'Free shiping' : `$${(option.priceCents / 100).toFixed(2)} - Shipping`
       HTML += `         
                 <div class="delivery-option" data-product-id="${matchingProduct.id}"
                  data-option-id="${option.id}">
@@ -72,6 +73,7 @@ function renderOrder() {
         const productId = option.dataset.productId;
         const deliveryOptionId = option.dataset.optionId;
         updateDeliveryOption(productId, deliveryOptionId);
+        renderPaymentSummary();
         renderOrder();
       });
     });
@@ -92,6 +94,7 @@ function renderOrder() {
             cart.forEach((value) => {
               if (value.productId === productId) {
                 value.quantity = getValueInput;
+                renderPaymentSummary();
                 saveToCart();
               }
             });
@@ -104,6 +107,7 @@ function renderOrder() {
         const productId = link.dataset.productId;
         removeFromToCart(productId);
         document.querySelector(`.js-order-infomation-${productId}`).remove();
+        renderPaymentSummary();
       });
     });
 }

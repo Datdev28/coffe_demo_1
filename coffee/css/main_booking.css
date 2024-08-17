@@ -1,0 +1,84 @@
+body {
+  background-image: url("../../img/booking/background_booking.jpg");
+  background-size: cover;
+  font-family: arial;
+}
+body .container {
+  width: 800px;
+  height: 350px;
+  background-color: white;
+  opacity: 0.9;
+  margin: auto;
+  margin-top: 200px;
+}
+body .container h1 {
+  font-family: "Arvo", serif;
+  margin-left: 250px;
+}
+body .container .container-booking {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  column-gap: 15px;
+}
+body .container .container-booking .people-quantity .title {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+body .container .container-booking .people-quantity .select-people {
+  width: 100%;
+}
+body .container .container-booking .location .title {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+body .container .container-booking .location .select-location {
+  width: 100%;
+}
+body .container .container-booking .date .title {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+body .container .container-booking .date .box-date {
+  width: 100%;
+  height: 16px;
+  border: solid 1px black;
+  position: relative;
+}
+body .container .container-booking .time .title {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+body .container .container-booking .time .select-time {
+  width: 100%;
+}
+body .container .infomation {
+  position: relative;
+  margin-top: 20px;
+}
+body .container .infomation span {
+  font-family: "Arvo", serif;
+  font-weight: bold;
+}
+body .container .infomation .error-number {
+  visibility: hidden;
+  position: absolute;
+  color: rgb(154, 9, 9);
+}
+body .container .infomation .error-characters {
+  visibility: hidden;
+  top: 50px;
+  position: absolute;
+  color: rgb(154, 9, 9);
+}
+body .container .confirm-btn {
+  width: 140px;
+  height: 30px;
+  margin-top: 60px;
+  margin-left: 332px;
+  background-color: rgb(231, 42, 73);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}/*# sourceMappingURL=main_booking.css.map */

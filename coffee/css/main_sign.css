@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-image: url("https://png.pngtree.com/background/20230516/original/pngtree-old-man-working-in-a-coffee-shop-picture-image_2618871.jpg");
+  background-size: cover;
+}
+body section .container-form-login {
+  width: 400px;
+  height: 550px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body section .container-form-login h1 {
+  padding-left: 132px;
+  font-size: 40px;
+  font-family: "Arvo", serif;
+  color: rgb(229, 227, 227);
+}
+body section .container-form-login .form-user {
+  position: relative;
+  display: flex;
+}
+body section .container-form-login .form-user i {
+  color: white;
+  font-size: 20px;
+}
+body section .container-form-login .form-user input {
+  height: 20px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  margin-left: 10px;
+  outline: none;
+  color: white;
+}
+body section .container-form-login .form-user input::placeholder {
+  color: white;
+}
+body section .container-form-login .form-user .error-id {
+  visibility: hidden;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  background-color: rgb(231, 25, 59);
+  color: white;
+  position: absolute;
+  left: -270px;
+  font-size: 16px;
+}
+body section .container-form-login .form-user .error-id::after {
+  right: -9px;
+  content: "";
+  position: absolute;
+  border-left: 10px solid rgb(231, 25, 59);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+body section .container-form-login .dash {
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+body section .container-form-login .form-passwork {
+  position: relative;
+  display: flex;
+}
+body section .container-form-login .form-passwork i {
+  color: white;
+  font-size: 20px;
+}
+body section .container-form-login .form-passwork input {
+  height: 20px;
+  border: none;
+  background: transparent;
+  width: 100%;
+  margin-left: 10px;
+  outline: none;
+  color: white;
+}
+body section .container-form-login .form-passwork input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+body section .container-form-login .form-passwork .error-password {
+  visibility: hidden;
+  display: flex;
+  padding-left: 10px;
+  align-items: center;
+  width: 250px;
+  height: 30px;
+  background-color: rgb(231, 25, 59);
+  color: white;
+  position: absolute;
+  left: -270px;
+  font-size: 16px;
+}
+body section .container-form-login .form-passwork .error-password::after {
+  right: -9px;
+  content: "";
+  position: absolute;
+  border-left: 10px solid rgb(231, 25, 59);
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+body section .container-form-login .save-account {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+body section .container-form-login .save-account .container-checkbox {
+  display: flex;
+}
+body section .container-form-login .save-account .check-box {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 13px;
+}
+body section .container-form-login .save-account .check-box i {
+  visibility: hidden;
+  color: rgb(0, 0, 0);
+}
+body section .container-form-login button {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(252, 28, 66, 0.863);
+  font-size: 25px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+body section .container-form-login .container-dot {
+  margin-left: 120px;
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+}
+@keyframes dot-blink {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 0;
+  }
+  100% {
+    scale: 2;
+  }
+}
+body section .container-form-login .container-dot .dot1,
+body section .container-form-login .container-dot .dot2,
+body section .container-form-login .container-dot .dot3 {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+body section .container-form-login .container-dot .dot1 {
+  animation: dot-blink 1.2s infinite 0s;
+}
+body section .container-form-login .container-dot .dot2 {
+  animation: dot-blink 1.2s infinite 0.3s;
+}
+body section .container-form-login .container-dot .dot3 {
+  animation: dot-blink 1.2s infinite 0.6s;
+}/*# sourceMappingURL=main_sign.css.map */

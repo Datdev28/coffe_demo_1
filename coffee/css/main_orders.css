@@ -266,6 +266,7 @@ h2 {
   width: 95%;
   height: 40px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 body {

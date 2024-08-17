@@ -1,5 +1,5 @@
 import { products, getProduct } from "../data/product.js";
-import { addToCart, cart } from "../data/cart.js";
+import { addToCart, cart, cartBooking, saveToCartBooking } from "../data/cart.js";
 let btn_change_background;
 let dot_change;
 btn_change_background = document.querySelector('.change-background');
@@ -13,6 +13,12 @@ dot_change.forEach((value) => {
       value.classList.add('is-active');
     }
   });
+});
+document.querySelector('.js-btn-cart').addEventListener('click', () => {
+  document.querySelector('.section-6').scrollIntoView({ behavior: 'smooth' });
+});
+document.querySelector('.js-booking-button').addEventListener('click', () => {
+    window.open('sign.html', '_blank');
 });
 function check() {
   const check_is = btn_change_background.querySelector('.is-active');
@@ -52,15 +58,15 @@ function loadProducts() {
     });
 }
 loadProducts();
-function quantityProduct(){
+function quantityProduct() {
   let HTML = '';
   let quantity = 0;
   let quantityProduct = 0;
   cart.forEach((product) => {
-   const matchingProduct = getProduct(product.productId);
-   quantityProduct++; 
-   quantity += product.quantity;
-   HTML += `
+    const matchingProduct = getProduct(product.productId);
+    quantityProduct++;
+    quantity += product.quantity;
+    HTML += `
       <div class="show-cart">
         <div class="container-img">
           <img src="${matchingProduct.img}">
@@ -73,20 +79,20 @@ function quantityProduct(){
       </div>
    `
   });
-    const html = `${quantity} <div class="container-show-cart js-container-show-cart"> `
-     + `${HTML} </div>`
-    if(quantity > 0) {
-      document.querySelector('.js-count-item-cart').innerHTML = html;
-      const countItemCart = document.querySelector('.js-count-item-cart');
-      const containerShowCart = document.querySelector('.js-container-show-cart')
-      countItemCart.addEventListener('mouseover', () => {
-        containerShowCart.style.height = `${quantityProduct * 120}px`;
-      });
-      countItemCart.addEventListener('mouseout', () => {
-        containerShowCart.style.height = `0px`;
-      });
-    } else {
-      document.querySelector('.js-count-item-cart').innerHTML = `
+  const html = `${quantity} <div class="container-show-cart js-container-show-cart"> `
+    + `${HTML} </div>`
+  if (quantity > 0) {
+    document.querySelector('.js-count-item-cart').innerHTML = html;
+    const countItemCart = document.querySelector('.js-count-item-cart');
+    const containerShowCart = document.querySelector('.js-container-show-cart')
+    countItemCart.addEventListener('mouseover', () => {
+      containerShowCart.style.height = `${quantityProduct * 120}px`;
+    });
+    countItemCart.addEventListener('mouseout', () => {
+      containerShowCart.style.height = `0px`;
+    });
+  } else {
+    document.querySelector('.js-count-item-cart').innerHTML = `
          0
         <div class="container-show-cart" 
           <div class="show-cart">
@@ -95,8 +101,23 @@ function quantityProduct(){
           </div>
         </div>
       `
-    }
-    console.log(html);
-
+  }
 }
 quantityProduct();
+function getValueSelect() {
+  document.querySelector('.js-booking-button')
+    .addEventListener('click', () => {
+      const timeValue = document.querySelector('.select-time').value;
+      const peopleValue = document.querySelector('.select-people').value;
+      const dateValue = document.querySelector('.input-date').value;
+
+      cartBooking.push({
+        timeValue,
+        peopleValue,
+        dateValue
+      });
+      saveToCartBooking();
+      console.log(cartBooking);
+    });
+}
+getValueSelect();

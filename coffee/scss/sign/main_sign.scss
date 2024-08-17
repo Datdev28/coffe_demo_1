@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  background-image: url('https://png.pngtree.com/background/20230516/original/pngtree-old-man-working-in-a-coffee-shop-picture-image_2618871.jpg');
+  background-size: cover;
+
+  section {
+    .container-form-login {
+      width: 400px;
+      height: 550px;
+      margin-top: 150px;
+      margin-left: auto;
+      margin-right: auto;
+
+      h1 {
+        padding-left: 132px;
+        font-size: 40px;
+        font-family: "Arvo", serif;
+        color: rgb(229, 227, 227);
+      }
+
+      .form-user {
+        position: relative;
+
+        i {
+          color: white;
+          font-size: 20px;
+        }
+
+        display: flex;
+
+        input {
+          height: 20px;
+          border: none;
+          background: transparent;
+          width: 100%;
+          margin-left: 10px;
+          outline: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+          }
+        }
+
+        .error-id {
+          visibility: hidden;
+          display: flex;
+          padding-left: 10px;
+          align-items: center;
+          width: 250px;
+          height: 30px;
+          background-color: rgb(231, 25, 59);
+          color: white;
+          position: absolute;
+          left: -270px;
+          font-size: 16px;
+
+          &::after {
+            right: -9px;
+            content: '';
+            position: absolute;
+            border-left: 10px solid rgb(231, 25, 59);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+          }
+        }
+      }
+
+      .dash {
+        flex-grow: 1;
+        height: 1px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .form-passwork {
+        position: relative;
+
+        i {
+          color: white;
+          font-size: 20px;
+        }
+
+        display: flex;
+
+        input {
+          height: 20px;
+          border: none;
+          background: transparent;
+          width: 100%;
+          margin-left: 10px;
+          outline: none;
+          color: white;
+
+          &::placeholder {
+            color: white;
+            font-size: 14px;
+          }
+        }
+
+        .error-password {
+          visibility: hidden;
+          display: flex;
+          padding-left: 10px;
+          align-items: center;
+          width: 250px;
+          height: 30px;
+          background-color: rgb(231, 25, 59);
+          color: white;
+          position: absolute;
+          left: -270px;
+          font-size: 16px;
+
+          &::after {
+            right: -9px;
+            content: '';
+            position: absolute;
+            border-left: 10px solid rgb(231, 25, 59);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+          }
+        }
+      }
+
+      .save-account {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+
+        .container-checkbox {
+          display: flex;
+        }
+
+        .check-box {
+          cursor: pointer;
+
+          i {
+            visibility: hidden;
+            color: rgb(0, 0, 0);
+          }
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20px;
+          height: 20px;
+          background-color: rgb(255, 255, 255);
+          margin-right: 13px;
+        }
+      }
+
+      button {
+        margin-top: 50px;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(252, 28, 66, 0.863);
+        font-size: 25px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+      }
+
+      .container-dot {
+        margin-left: 120px;
+        width: 150px;
+        display: flex;
+        justify-content: space-around;
+
+        @keyframes dot-blink {
+          0% {
+            scale: 0;
+          }
+
+          50% {
+            scale: 0;
+          }
+
+          100% {
+            scale: 2;
+          }
+        }
+
+        .dot1,
+        .dot2,
+        .dot3 {
+          width: 10px;
+          height: 10px;
+          background-color: white;
+          border-radius: 50%;
+        }
+
+        .dot1 {
+          animation: dot-blink 1.2s infinite 0s;
+        }
+
+        .dot2 {
+          animation: dot-blink 1.2s infinite 0.3s;
+        }
+
+        .dot3 {
+          animation: dot-blink 1.2s infinite 0.6s;
+        }
+      }
+    }
+  }
+}
