@@ -5,10 +5,16 @@ body {
   background-image: url("https://png.pngtree.com/background/20230516/original/pngtree-old-man-working-in-a-coffee-shop-picture-image_2618871.jpg");
   background-size: cover;
 }
+body section .nav img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
 body section .container-form-login {
   width: 400px;
   height: 550px;
-  margin-top: 150px;
+  margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -17,6 +23,62 @@ body section .container-form-login h1 {
   font-size: 40px;
   font-family: "Arvo", serif;
   color: rgb(229, 227, 227);
+}
+body section .container-form-login .sign-in {
+  color: white;
+  margin-bottom: 40px;
+  margin-left: 50px;
+}
+body section .container-form-login .sign-in span {
+  margin-left: 5px;
+  position: relative;
+  cursor: pointer;
+}
+body section .container-form-login .sign-in span:hover .dash-sign1 {
+  animation: dash-sign1 0.4s ease-in-out forwards;
+  height: 1px;
+  background-color: rgb(216, 216, 216);
+}
+body section .container-form-login .sign-in span:hover .dash-sign2 {
+  animation: dash-sign2 0.4s ease-in-out;
+  animation-delay: 0.5s;
+  height: 1px;
+  background-color: rgb(216, 216, 216);
+  opacity: 1;
+}
+@keyframes dash-sign1 {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes dash-sign2 {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+body section .container-form-login .sign-in span .dash-sign1 {
+  position: absolute;
+  width: 107px;
+  height: 2px;
+  background-color: white;
+  right: 0;
+  transform-origin: right;
+}
+body section .container-form-login .sign-in span .dash-sign2 {
+  position: absolute;
+  width: 107px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  right: 0;
+  transform-origin: left;
+  opacity: 0;
+  transition: opacity 2s;
 }
 body section .container-form-login .form-user {
   position: relative;
