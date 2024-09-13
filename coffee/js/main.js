@@ -20,6 +20,12 @@ document.querySelector('.js-btn-cart').addEventListener('click', () => {
 document.querySelector('.js-booking-button').addEventListener('click', () => {
     window.open('sign.html', '_blank');
 });
+document.querySelector('.js-give-btn').addEventListener('click', () => {
+    document.querySelector('.js-loading').style.visibility = 'visible';
+    setTimeout(() => {
+      document.querySelector('.js-loading').style.visibility = 'hidden';
+    }, 1500);
+})
 function check() {
   const check_is = btn_change_background.querySelector('.is-active');
   if (check_is) {

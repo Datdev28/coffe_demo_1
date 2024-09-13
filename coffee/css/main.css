@@ -1035,6 +1035,33 @@
 .container-section-9 .contact-me .contact-item .your-email button i {
   color: white;
 }
+.container-section-9 .contact-me .contact-item .loading {
+  position: relative;
+  margin-top: 5px;
+  margin-left: 5px;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  background-color: rgb(149, 148, 148);
+  visibility: hidden;
+}
+.container-section-9 .contact-me .contact-item .loading .dot {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 3px;
+  top: 50%;
+  left: 50%;
+  transform-origin: -50% -50%;
+  transform: rotate(0deg) translateY(50%);
+  background-color: white;
+  animation: circle 1s linear infinite;
+}
+@keyframes circle {
+  100% {
+    transform: rotate(360deg) translate(50%, 50%);
+  }
+}
 .container-section-9 .localtion-shop {
   margin-left: 70px;
   color: white;
